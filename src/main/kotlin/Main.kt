@@ -13,6 +13,17 @@ fun main(args: Array<String>) {
         }
         println()
     }
+
+    sumaColumnas(m,sumaColum)
+    sumaFilas(m, sumaFilas)
+    println("La suma de las filas es")
+    println(Arrays.toString(sumaFilas))
+    println("La suma de las columnas es")
+    println(Arrays.toString(sumaColum))
+
+}
+
+fun sumaFilas(m:Array<Array<Int>>, sumaFilas:Array<Int>){
     var f: Int = 0
     var c: Int = 0
 
@@ -24,12 +35,6 @@ fun main(args: Array<String>) {
         c = 0
         f++
     }
-
-    sumaColumnas(m,sumaColum)
-    println("La suma de las filas es")
-    println(Arrays.toString(sumaFilas))
-    println("La suma de las columnas es")
-    println(Arrays.toString(sumaColum))
 
 }
 
@@ -47,6 +52,3 @@ fun sumaColumnas (m:Array<Array<Int>>, sumaColumnas:Array<Int>){
     }
 
 }
-
-
-
