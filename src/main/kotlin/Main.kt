@@ -7,12 +7,7 @@ fun main(args: Array<String>) {
     var sumaColum = Array(m[0].size){0}
 
 
-    for (f in m.indices){
-        for (c in m[f].indices){
-            print("${m[f][c]} ")
-        }
-        println()
-    }
+    imprimirTablero(m)
 
     sumaColumnas(m,sumaColum)
     sumaFilas(m, sumaFilas)
@@ -21,6 +16,16 @@ fun main(args: Array<String>) {
     println("La suma de las columnas es")
     println(Arrays.toString(sumaColum))
 
+}
+
+fun imprimirTablero(m:Array<Array<Int>>){
+
+    for (f in m.indices){
+        for (c in m[f].indices){
+            print("${m[f][c]} ")
+        }
+        println()
+    }
 }
 
 fun sumaFilas(m:Array<Array<Int>>, sumaFilas:Array<Int>){
