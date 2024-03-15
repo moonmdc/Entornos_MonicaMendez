@@ -8,7 +8,13 @@ fun main(args: Array<String>) {
 
 
     imprimirTablero(m)
+    sumarFilasColumnas(m, sumaFilas, sumaColum)
 
+
+
+}
+
+fun sumarFilasColumnas(m:Array<Array<Int>>, sumaFilas:Array<Int>, sumaColum:Array<Int>){
     sumaColumnas(m,sumaColum)
     sumaFilas(m, sumaFilas)
     println("La suma de las filas es")
